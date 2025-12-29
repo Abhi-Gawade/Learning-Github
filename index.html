@@ -14,6 +14,25 @@
         <button onclick="addTask()">Add</button>
       </div>
 
+      <div class="filters">
+        <button class="filter-btn active" onclick="filterTasks('all')">
+          All
+        </button>
+        <button class="filter-btn" onclick="filterTasks('active')">
+          Active
+        </button>
+        <button class="filter-btn" onclick="filterTasks('completed')">
+          Completed
+        </button>
+      </div>
+
+      <div class="stats">
+        <span id="taskStats">0 tasks remaining</span>
+        <button class="clear-btn" onclick="clearCompleted()">
+          Clear Completed
+        </button>
+      </div>
+
       <ul id="taskList"></ul>
     </div>
 
